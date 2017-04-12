@@ -5,11 +5,7 @@ extensionsv62:
   ports:
     - 8089:80
   volumes:
-    - ~/docker/persistence/typo3_62/extensionsv62/fileadmin:/var/www/html/fileadmin
-    - ~/docker/persistence/typo3_62/extensionsv62/typo3conf:/var/www/html/typo3conf
-    - ~/docker/persistence/typo3_62/extensionsv62/typo3temp:/var/www/html/typo3temp
-    - ~/docker/persistence/typo3_62/extensionsv62/uploads:/var/www/html/uploads
-    - ~/docker/persistence/typo3_62/extensionsv62/typo3:/var/www/html/typo3
+    - ~/docker/persistence/typo3_62/extensionsv62:/var/www/html
 
 typo3_db:
   image: mariadb:latest
